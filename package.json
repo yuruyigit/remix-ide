@@ -37,6 +37,7 @@
     "npm-run-all": "^4.0.2",
     "onchange": "^3.2.1",
     "remix-core": "0.0.15",
+    "remix-debug": "^0.2.1",
     "remix-lib": "0.2.9",
     "remix-solidity": "0.1.11",
     "remix-tests": "latest",
