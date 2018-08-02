@@ -25,7 +25,7 @@ class CmdInterpreterAPI {
       app: self._components.registry.get('app').api,
       editor: self._components.registry.get('editor').api,
       compiler: self._components.registry.get('compiler').api,
-      offsetToLineColumnConverter: self._components.registry.get('offsettolinecolumnconverter').api,
+      offsetToLineColumnConverter: self._components.registry.get('offsettolinecolumnconverter').api
     }
     self.commandHelp = {
       'remix.debug(hash)': 'Start debugging a transaction.',
@@ -90,7 +90,7 @@ class CmdInterpreterAPI {
       self.d.localsAt = (contractAddress, vmTraceIndex) => {
         debugSession.sourceLocationFromVMTraceIndex(contractAddress, vmTraceIndex, (error, location) => {
           if (error) return self.log(error)
-          debugSession.decodeLocalsAt(23, location, (error, locals) => { 
+          debugSession.decodeLocalsAt(23, location, (error, locals) => {
             if (error) return this._components.terminal.commands.html(error)
             var treeView = new TreeView({
               json: true,
